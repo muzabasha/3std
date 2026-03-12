@@ -49,13 +49,14 @@ export default function Navbar() {
         {/* Center Nav */}
         <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
           {[
-            { href: '/', icon: '🏠', label: t('home') },
-            { href: '/subjects', icon: '📚', label: t('subjects') },
-            { href: '/games', icon: '🎮', label: t('games') },
-            { href: '/rewards', icon: '🏆', label: t('rewards') },
-            { href: '/dashboard', icon: '📊', label: t('dashboard') },
+            { href: '/', icon: '🏠', label: t('home'), target: '_self' },
+            { href: '/subjects', icon: '📚', label: t('subjects'), target: '_self' },
+            { href: '/games', icon: '🎮', label: t('games'), target: '_self' },
+            { href: '/rewards', icon: '🏆', label: t('rewards'), target: '_self' },
+            { href: '/dashboard', icon: '📊', label: t('dashboard'), target: '_self' },
+            { href: 'https://scholar-sparkle-web.lovable.app', icon: '👩‍🏫', label: t('resourcePerson'), target: '_blank' },
           ].map((item) => (
-            <a key={item.href} href={item.href} className="nav-link"
+            <a key={item.href} href={item.href} target={item.target} rel={item.target === '_blank' ? 'noopener noreferrer' : undefined} className="nav-link"
               style={{ color: scrolled ? '#444' : 'white', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none' }}>
               <span>{item.icon}</span>
               <span>{item.label}</span>

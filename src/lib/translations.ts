@@ -57,6 +57,7 @@ export const translations: Record<Language, Record<string, string>> = {
     checkAnswer: 'Check Answer',
     tapToHear: 'Tap to Hear',
     celebration: '🎊 Amazing Work! You\'re a Star! 🌟',
+    resourcePerson: 'Resource person',
   },
   hindi: {
     appName: 'फनलर्न लैब',
@@ -114,6 +115,7 @@ export const translations: Record<Language, Record<string, string>> = {
     checkAnswer: 'उत्तर जाँचें',
     tapToHear: 'सुनने के लिए दबाएँ',
     celebration: '🎊 अद्भुत काम! आप एक सितारे हैं! 🌟',
+    resourcePerson: 'साधन व्यक्ति',
   },
   kannada: {
     appName: 'ಫನ್‌ಲರ್ನ್ ಲ್ಯಾಬ್',
@@ -171,6 +173,7 @@ export const translations: Record<Language, Record<string, string>> = {
     checkAnswer: 'ಉತ್ತರ ತಿಳಿಯಿರಿ',
     tapToHear: 'ಕೇಳಲು ಒತ್ತಿ',
     celebration: '🎊 ಅದ್ಭುತ ಕೆಲಸ! ನೀವು ನಕ್ಷತ್ರ! 🌟',
+    resourcePerson: 'ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ',
   }
 };
 
